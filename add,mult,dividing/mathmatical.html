@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>m.h</title>
+    <style>
+        span {
+            color: red;
+        }
+            h2{
+                color: blue;
+            }
+        
+    </style>
+</head>
+<body>
+    
+    <h2>Adding--Multiplying--and dividing 3 values</h2><hr>
+
+
+    <script>
+    
+    var userInput = []
+
+    for(var m = 0; m <3; m++){
+        userInput.push(+prompt("please enter num"))
+    }
+
+
+    function summ (operation) {
+        var result = userInput[0]
+        for(var i =1; i < userInput.length; i++){
+           
+            switch(operation){
+                case "+":
+                     result += userInput[i]
+                     break;
+                case "*":
+                     result *= userInput[i]
+                     break;
+                case "/":
+                     result /= userInput[i]
+                     break;
+                default:
+                        }
+            }
+        return result
+    }
+           document.write(`<p><span>sum of the 3 values : </span> ${userInput.join("+")} = ${summ("+")} </p>`)
+            document.write(`<p><span>sum of the 3 values :</span> ${userInput.join("*")} = ${summ("*")} </p>`)
+             document.write(`<p><span>sum of the 3 values : </span> ${userInput.join("/")} = ${summ("/")} </p>`)
+   
+    </script>
+</body>
+</html>

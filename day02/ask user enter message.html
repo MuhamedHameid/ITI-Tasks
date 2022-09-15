@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mohamed hamid</title>
+</head>
+
+<body>
+
+
+       
+    
+    <style>
+        *{
+            color: rgb(153, 0, 255);
+          }
+        </style>
+    <h2>Heading</h2>
+           <hr>
+      <div id="data"></div>
+
+                <script>
+                
+                function Head() {
+
+           var m = prompt("please enter your message")
+           var d = document.getElementById("data")
+
+
+            for (var message = 1; message <= 6; message++) {
+
+                d.innerHTML += "<h"+message+">"+m+"</h"+message+">"              
+            }
+        }
+                   Head();
+                        
+                </script>
+
+
+
+
+</body>
+
+</html>

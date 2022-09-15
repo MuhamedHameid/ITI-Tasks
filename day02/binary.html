@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mohamed hamid</title>
+</head>
+<body>
+       <style>              
+    
+    .center{        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+
+        }
+
+
+</style>
+    
+
+                 <div class="center">
+              
+                    <h2>convert from binary to integer</h2>
+
+         <input id="binary" type="number" placeholder="enter binary num"/><br>
+         <button id="add" onclick="but()">Convert</button><br>
+         <input id="result" type="number" placeholder="result"/>
+
+        </div>
+
+
+             <script>
+                   var b = document.getElementById("binary");
+                   var c = document.getElementById("add");
+                   var r = document.getElementById("result");
+
+                    var result = 0;
+
+                   function but () {
+
+                    result = parseInt(b.value, 2 );
+                    r.value =`${result}` ;             
+                  }
+
+
+
+             </script>
+
+
+</body>
+</html>

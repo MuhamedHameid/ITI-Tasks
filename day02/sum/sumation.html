@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+
+<body>
+    <h2>Sumation</h2><hr>
+    
+    <div class="container">
+        <div>
+            <div><input id="num" type="number"/></div>
+            <div class="btn">
+                <button onclick={klic()}>Add</button>
+                <button onclick={reset()}>Reset</button></div>
+        </div>
+        <p id="container">Result: 0</p>
+    </div>
+             <script>
+              var m = 0;
+              var Input = document.getElementById("num");
+              var output = document.getElementById("container");
+
+    function klic (){ 
+                
+        m += parseInt(Input.value || 0)
+        if(Input.value && m < 100){
+
+        
+        }else if(Input.value && m > 100){
+            output.innerText = `Error`
+            output.innerText = ("Result:", +m)
+        }
+        else{
+       output.innerText = ("pleas Enter number...")
+            
+        }
+    }
+    function reset(){
+        m = 0;
+        output.innerText = `Result: ${m}`
+    }
+    
+</script>
+</body>
+
+                <!-- <body>     
+             <h1>sumation</h1><hr>
+          
+             <div class="input">    
+                <input id="butt" type="number">
+                    
+                     <button onclick={addd()}>addition</button>
+                     <button onclick={out()}>reset</button>
+                   
+                      
+                     <p  id="result">output : 0</p>
+
+                 </div>
+             <Script>
+
+
+          var x =0;
+          var i = document.getElementsByClassName("addd");
+            var o = document.getElementById("out");       
+         
+            function addd (){
+                 
+           x += parseInt(i.value || 0);
+           if(i.value && x < 100);
+         
+                              }
+               function out(){
+                        var m =0;
+result.innerHTML =`output: ${m}`;
+                            }
+                
+
+
+
+
+
+        //    var sum =0;
+        //    var flag =1;
+        //     while(flag) {
+        //         var num = +prompt("enter your num");
+
+        //         if (num) {
+        //             sum += num;
+        //         }  else {flag=0};
+        //     }
+
+        //               document.write("sum = " + sum);
+              </Script>
+
+
+
+
+</body> -->
+</html>
+
+
+
+
+
+
+
+
+
+
+
+    
+                    
+                   
